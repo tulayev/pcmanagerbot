@@ -2,6 +2,7 @@
 using PCManagerBot.Bot.Extra;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PCManagerBot
@@ -19,6 +20,7 @@ namespace PCManagerBot
         private void Init()
         {
             main = new Main();
+            timer.Enabled = true;
 
             if (!File.Exists("userinfo.txt"))
                 panel.Visible = true;
@@ -26,7 +28,7 @@ namespace PCManagerBot
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            main.UpdateAsync();
+            Task.Factory.StartNew(() => main.Update());
         }
 
         private void btnGetlogs_Click(object sender, EventArgs e)
@@ -64,7 +66,6 @@ namespace PCManagerBot
                 }
                 main = new Main();
                 panel.Visible = false;
-                timer.Enabled = true;
             }
             else
             {

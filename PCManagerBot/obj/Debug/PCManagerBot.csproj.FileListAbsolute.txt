@@ -22,3 +22,4 @@ C:\Users\User\Desktop\Projects\PCManagerBot\PCManagerBot\obj\Debug\PCManagerBot.
 C:\Users\User\Desktop\Projects\PCManagerBot\PCManagerBot\obj\Debug\PCManagerBot.csproj.CopyComplete
 C:\Users\User\Desktop\Projects\PCManagerBot\PCManagerBot\obj\Debug\PCManagerBot.exe
 C:\Users\User\Desktop\Projects\PCManagerBot\PCManagerBot\obj\Debug\PCManagerBot.pdb
+C:\Users\User\Desktop\pcmanagerbot\PCManagerBot\obj\Debug\PCManagerBot.csproj.CoreCompileInputs.cache

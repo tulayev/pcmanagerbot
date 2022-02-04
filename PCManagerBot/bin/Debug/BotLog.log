@@ -1,0 +1,117 @@
+04.02.2022 21:47:13 Authorization...
+04.02.2022 21:47:24 Authorization...
+04.02.2022 21:47:26 ZYX: /help
+04.02.2022 21:47:26 ZYX: /start
+04.02.2022 21:47:27 ZYX: /start
+04.02.2022 21:47:27 ZYX: /start
+04.02.2022 21:47:27 ZYX: /start
+04.02.2022 21:47:28 ZYX: /start
+04.02.2022 21:47:28 ZYX: /start
+04.02.2022 21:47:29 ZYX: /start
+04.02.2022 21:47:29 ZYX: /start
+04.02.2022 21:47:29 ZYX: /start
+04.02.2022 21:47:42 ZYX: /help
+04.02.2022 21:47:44 ZYX: /start
+04.02.2022 21:47:46 ZYX: /help
+04.02.2022 21:48:10 Authorization...
+04.02.2022 21:48:46 Authorization...
+04.02.2022 21:48:47 ZYX: /start
+04.02.2022 21:48:47 ZYX: /help
+04.02.2022 21:48:59 ZYX: /start
+04.02.2022 21:51:35 Authorization...
+04.02.2022 21:51:39 ZYX: /start
+04.02.2022 21:51:41 ZYX: /help
+04.02.2022 21:51:47 ZYX: /start
+04.02.2022 21:51:49 ZYX: /help
+04.02.2022 21:52:05 Authorization...
+04.02.2022 21:52:16 Authorization...
+04.02.2022 21:52:19 ZYX: /start
+04.02.2022 21:52:21 ZYX: /help
+04.02.2022 21:52:30 Authorization...
+04.02.2022 21:52:32 ZYX: /start
+04.02.2022 21:52:34 ZYX: /help
+04.02.2022 21:52:36 ZYX: /start
+04.02.2022 21:56:28 Authorization...
+04.02.2022 21:56:39 Authorization...
+04.02.2022 21:57:23 Authorization...
+04.02.2022 21:57:31 ZYX: /start
+04.02.2022 21:57:33 ZYX: /help
+04.02.2022 21:58:28 Authorization...
+04.02.2022 21:58:42 ZYX: /start
+04.02.2022 21:58:44 ZYX: /help
+04.02.2022 21:59:02 ZYX: /help
+04.02.2022 21:59:04 ZYX: /start
+04.02.2022 21:59:09 ZYX: screenshot
+04.02.2022 21:59:10 File MyScreen.jpg is sent to server, server's response: {"ok":true,"result":{"message_id":472,"from":{"id":1395344622,"is_bot":true,"first_name":"TestStrangeBot","username":"TestStrangeBot"},"chat":{"id":758655102,"first_name":"ZYX","type":"private"},"date":1643993950,"photo":[{"file_id":"AgACAgIAAxkDAAIB2GH9W166U5Zj7SSu8Lyx8vEYW-qlAAJDuDEbSc7xS3dZhrUZCyO8AQADAgADcwADIwQ","file_unique_id":"AQADQ7gxG0nO8Ut4","file_size":800,"width":90,"height":51},{"file_id":"AgACAgIAAxkDAAIB2GH9W166U5Zj7SSu8Lyx8vEYW-qlAAJDuDEbSc7xS3dZhrUZCyO8AQADAgADbQADIwQ","file_unique_id":"AQADQ7gxG0nO8Uty","file_size":10962,"width":320,"height":180},{"file_id":"AgACAgIAAxkDAAIB2GH9W166U5Zj7SSu8Lyx8vEYW-qlAAJDuDEbSc7xS3dZhrUZCyO8AQADAgADeAADIwQ","file_unique_id":"AQADQ7gxG0nO8Ut9","file_size":47084,"width":800,"height":450},{"file_id":"AgACAgIAAxkDAAIB2GH9W166U5Zj7SSu8Lyx8vEYW-qlAAJDuDEbSc7xS3dZhrUZCyO8AQADAgADeQADIwQ","file_unique_id":"AQADQ7gxG0nO8Ut-","file_size":49152,"width":960,"height":540}]}}
+04.02.2022 22:00:24 Authorization...
+04.02.2022 22:00:24 Authorization...
+04.02.2022 22:00:28 ZYX: /start
+04.02.2022 22:00:28 ZYX: /start
+04.02.2022 22:00:30 ZYX: /help
+04.02.2022 22:00:31 ZYX: /help
+04.02.2022 22:01:47 Authorization...
+04.02.2022 22:01:50 ZYX: /start
+04.02.2022 22:01:54 ZYX: /help
+04.02.2022 22:05:23 Authorization...
+04.02.2022 22:05:26 ZYX: /start
+04.02.2022 22:05:31 ZYX: /help
+04.02.2022 22:05:34 ZYX: /start
+04.02.2022 22:05:36 ZYX: /help
+04.02.2022 22:06:00 Authorization...
+04.02.2022 22:06:04 ZYX: /help
+04.02.2022 22:14:50 Authorization...
+04.02.2022 22:14:53 ZYX: /start
+04.02.2022 22:14:55 ZYX: /help
+04.02.2022 22:16:13 Authorization...
+04.02.2022 22:16:18 ZYX: /help
+04.02.2022 22:18:51 Authorization...
+04.02.2022 22:18:56 ZYX: /start
+04.02.2022 22:18:58 ZYX: /help
+04.02.2022 22:19:34 Authorization...
+04.02.2022 22:19:38 ZYX: /start
+04.02.2022 22:19:40 ZYX: /help
+04.02.2022 22:20:07 Authorization...
+04.02.2022 22:20:10 ZYX: /start
+04.02.2022 22:22:48 Authorization...
+04.02.2022 22:22:52 ZYX: /start
+04.02.2022 22:22:53 ZYX: /help
+04.02.2022 22:25:48 Authorization...
+04.02.2022 22:25:51 ZYX: /help
+04.02.2022 22:28:47 Authorization...
+04.02.2022 22:28:50 ZYX: /help
+04.02.2022 22:30:28 Authorization...
+04.02.2022 22:30:32 ZYX: /help
+04.02.2022 22:45:09 Authorization...
+04.02.2022 22:45:13 ZYX: /help
+04.02.2022 22:45:22 ZYX: search_web
+04.02.2022 22:45:52 Authorization...
+04.02.2022 22:45:59 ZYX: search_web
+04.02.2022 22:54:05 Authorization...
+04.02.2022 22:54:12 ZYX: /help
+04.02.2022 22:54:15 ZYX: /search_web
+04.02.2022 22:55:38 Authorization...
+04.02.2022 22:55:40 ZYX: /search_web
+04.02.2022 22:55:41 ZYX: /log
+04.02.2022 22:55:41 ZYX: search_web
+04.02.2022 22:55:42 ZYX: log
+04.02.2022 22:56:00 ZYX: seacrh_web
+04.02.2022 22:56:16 ZYX: search_web
+04.02.2022 22:56:27 ZYX: google.com
+04.02.2022 22:56:34 ZYX: search_web
+04.02.2022 22:56:42 ZYX: Kamdo tanjro
+04.02.2022 22:57:33 Authorization...
+04.02.2022 22:57:41 ZYX: /start
+04.02.2022 22:57:43 ZYX: /help
+04.02.2022 22:57:46 ZYX: /process
+04.02.2022 22:57:58 ZYX: /log
+04.02.2022 22:58:02 ZYX: /process
+04.02.2022 22:58:06 ZYX: /apps
+04.02.2022 22:58:12 ZYX: /process_start
+04.02.2022 22:58:18 ZYX: chrome
+04.02.2022 22:58:19 Launching app: chrome
+04.02.2022 22:58:25 ZYX: /search_web
+04.02.2022 22:58:35 ZYX: C#
+04.02.2022 22:59:58 Authorization...
+04.02.2022 23:00:09 ZYX: /help
+04.02.2022 23:00:12 ZYX: /screenshot
+04.02.2022 23:00:12 File MyScreen.jpg is sent to server, server's response: {"ok":true,"result":{"message_id":561,"from":{"id":1395344622,"is_bot":true,"first_name":"TestStrangeBot","username":"TestStrangeBot"},"chat":{"id":758655102,"first_name":"ZYX","type":"private"},"date":1643997613,"photo":[{"file_id":"AgACAgIAAxkDAAICMWH9aa1Eat0wd8l0W31JM-vA8PybAAJ9uDEbSc7xS64yW1Nrq797AQADAgADcwADIwQ","file_unique_id":"AQADfbgxG0nO8Ut4","file_size":759,"width":90,"height":51},{"file_id":"AgACAgIAAxkDAAICMWH9aa1Eat0wd8l0W31JM-vA8PybAAJ9uDEbSc7xS64yW1Nrq797AQADAgADbQADIwQ","file_unique_id":"AQADfbgxG0nO8Uty","file_size":10563,"width":320,"height":180},{"file_id":"AgACAgIAAxkDAAICMWH9aa1Eat0wd8l0W31JM-vA8PybAAJ9uDEbSc7xS64yW1Nrq797AQADAgADeAADIwQ","file_unique_id":"AQADfbgxG0nO8Ut9","file_size":48903,"width":800,"height":450},{"file_id":"AgACAgIAAxkDAAICMWH9aa1Eat0wd8l0W31JM-vA8PybAAJ9uDEbSc7xS64yW1Nrq797AQADAgADeQADIwQ","file_unique_id":"AQADfbgxG0nO8Ut-","file_size":49152,"width":960,"height":540}]}}

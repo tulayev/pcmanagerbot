@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace PCManagerBot.Bot
 {
-    public enum BotState { Wait, KillProc, StartProc, SendMsg }
+    public enum BotState { Wait, KillProc, StartProc, SendMsg, SearchWeb }
 
     class Main
     {
@@ -23,6 +23,20 @@ namespace PCManagerBot.Bot
         private WebClient wc;
         private BotState botState = BotState.Wait;
         private Helper helper;
+        private const string infoText =
+@"Welcome, to PC Manager Bot. You can find all the useful commnds below
+/start -> to start working with bot    
+/help -> to get a help
+/log -> returns last 10 logs
+/screenshot -> takes a screenshot from your PC
+/process -> gets a list of currently running processes
+/process_start -> starts a brand new process
+/process_kill -> kills one of the currently running processes
+/apps -> gets a list of all apps installed on your machine
+/sysinfo -> gets a system information of your machine
+/sendmsg -> this command is just for fun
+/search_web -> search for something in the web!
+/shutdown -> shutdowns the machine";
 
         public bool HasData { get; set; } = false;
 
@@ -61,9 +75,9 @@ namespace PCManagerBot.Bot
             }
         }
 
-        public async Task UpdateAsync()
+        public void Update()
         {
-            string s = await wc.DownloadStringTaskAsync(baseUrl + token + "/getUpdates?offset=" + (lastUpdateId + 1));
+            string s = wc.DownloadString(baseUrl + token + "/getUpdates?offset=" + (lastUpdateId + 1));
             TelegramMessage tgMessages = JsonConvert.DeserializeObject<TelegramMessage>(s);
 
             HandleResults(tgMessages);
@@ -111,6 +125,9 @@ namespace PCManagerBot.Bot
                     case BotState.SendMsg:
                         SendMsg(result.message.text);
                         break;
+                    case BotState.SearchWeb:
+                        SearchWeb(result.message.text);
+                        break;
                     /*default:
                         SendMessage(result.message.chat.id, result.message.text);
                         break;*/
@@ -135,19 +152,18 @@ namespace PCManagerBot.Bot
 
             switch (text.ToLower())
             {
-                case "/start": answer = "Hello, I am a PC Manager Bot. Do you know what I can do?\t/help"; break;
-                case "/help": answer = @"Welcome, to PC Manager Bot. You can find all the useful commnds below
-                                           /start      - to start working with bot
-                                           /help       - to get a help"; break;
-                case "log": answer = Logs.ReturnLastTenLogs(); break;
-                case "screenshot": SendPrintScreen(chatId); return;
-                case "process": answer = GetMyProcess(); break;
-                case "process_start": answer = "Which one?"; botState = BotState.StartProc; break;
-                case "process_kill": answer = GetMyProcess() + "\r\nWhich one?"; botState = BotState.KillProc; break;
-                case "apps": answer = helper.GetInstalledPrograms(); break;
-                case "sysinfo": answer = GetSystemInfo(); break;
-                case "sendmsg": answer = "Write something..."; botState = BotState.SendMsg; break;
-                case "shutdown": ShutDown(); break;
+                case "/start": answer = "Hello, I am a PC Manager Bot. Do you know what I can do? /help"; break;
+                case "/help": answer = infoText; break;
+                case "/log": answer = Logs.ReturnLastTenLogs(); break;
+                case "/screenshot": SendPrintScreen(chatId); return;
+                case "/process": answer = GetMyProcess(); break;
+                case "/process_start": answer = "Which one?"; botState = BotState.StartProc; break;
+                case "/process_kill": answer = GetMyProcess() + "\r\nWhich one?"; botState = BotState.KillProc; break;
+                case "/apps": answer = helper.GetInstalledPrograms(); break;
+                case "/sysinfo": answer = GetSystemInfo(); break;
+                case "/search_web": answer = "Google it! Type something..."; botState = BotState.SearchWeb; break;
+                case "/sendmsg": answer = "Write something..."; botState = BotState.SendMsg; break;
+                case "/shutdown": ShutDown(); break;
                 //default: answer = $"You wrote me '{text}'"; break;
             }
 
@@ -186,7 +202,6 @@ namespace PCManagerBot.Bot
             string address = baseUrl + token + "/sendPhoto";
             NameValueCollection nvc = new NameValueCollection();
             nvc.Add("chat_id", chatId.ToString());
-            //HttpUploadFile(address, @"C:\Users\User\Downloads\bot.jpg", "photo", "image/png", nvc);
             helper.HttpUploadScreen(address, "MyScreen.jpg", "photo", "image/jpg", nvc);
         }
 
@@ -315,6 +330,13 @@ namespace PCManagerBot.Bot
             }
 
             return sb.ToString();
+        }
+
+        private string SearchWeb(string query)
+        {
+            botState = BotState.Wait;
+            Process.Start($"microsoft-edge:https://www.google.com/search?q={query}");
+            return "started";
         }
     }
 }
