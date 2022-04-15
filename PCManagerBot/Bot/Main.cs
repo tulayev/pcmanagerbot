@@ -8,7 +8,6 @@ using System.Management;
 using PCManagerBot.Bot.Extra;
 using Newtonsoft.Json;
 using System.Windows.Forms;
-using System.Threading.Tasks;
 
 namespace PCManagerBot.Bot
 {
@@ -164,7 +163,7 @@ namespace PCManagerBot.Bot
                 case "/search_web": answer = "Google it! Type something..."; botState = BotState.SearchWeb; break;
                 case "/sendmsg": answer = "Write something..."; botState = BotState.SendMsg; break;
                 case "/shutdown": ShutDown(); break;
-                //default: answer = $"You wrote me '{text}'"; break;
+                default: throw new ArgumentException("Unknown command");
             }
 
             SendMessage(chatId, answer);

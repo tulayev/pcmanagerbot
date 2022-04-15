@@ -1,5 +1,4 @@
-﻿
-namespace PCManagerBot.Bot
+﻿namespace PCManagerBot.Bot
 {
     class TelegramMessage
     {
